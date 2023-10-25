@@ -1,0 +1,13 @@
+In the context of the Transformer model, when we talk about inputs and outputs being "embedded," we are referring to the process of representing words or tokens as continuous vectors in a high-dimensional space. This is a fundamental component of the Transformer architecture and is crucial for its ability to process sequential data, such as natural language text.
+
+Here's a breakdown of what this means:
+
+1. **Word Embedding:** Words or tokens in a text are initially discrete and categorical. To work with them in neural networks, they need to be converted into numerical vectors. This process is called word embedding. Each word is mapped to a high-dimensional vector, where words with similar meanings are closer in this vector space. This mapping is learned during the training of the model.
+
+2. **Positional Encoding:** In the Transformer, the position of each word in the sequence is also important. To capture this positional information, positional encodings are added to the word embeddings. These encodings are fixed and represent the position of a word in the sequence.
+
+3. **Input and Output Embeddings:** In the Transformer model, both the input (e.g., a sentence) and the output (e.g., the translation of that sentence) are embedded in this way. This means that each word or token is represented as a vector, and these vectors are used as the model's input and output.
+
+The idea behind embedding is to allow the model to understand the meaning and relationships between words based on their contextual usage. This vector representation enables the model to perform various operations, such as self-attention, across the sequence, which is a key component of the Transformer's ability to capture long-range dependencies in the data.
+
+So, when we say "inputs and outputs in the Transformer are embedded," we mean that words or tokens are converted into numerical vectors to be processed by the model, facilitating its understanding of the underlying data.
